@@ -30,7 +30,7 @@ const AboutUs = () => {
             >
               <div className="au-gradient-bar md:ml-[40px]" />
               <div className="w-[140px] h-[145px] md:w-[250px] md:h-[255px] sm:w-[170px] sm:h-[175px] bg-white rounded-lg mt-5 mb-2"></div>
-              <h1 className="font-manrope font-semibold text-white text-sm md:ml-[10px]">
+              <h1 className="font-manrope font-semibold text-white text-sm sm:text-base md:text-lg md:ml-[10px]">
                 {data.name}
               </h1>
               <p className="font-manrope text-[#81AFDD] text-xs sm:text-sm md:text-base mt-2 mb-10 md:ml-[10px]">
