@@ -29,8 +29,10 @@ const AboutUs = () => {
               className="flex flex-col items-center justify-center md:justify-normal md:items-start col-span-1"
             >
               <div className="au-gradient-bar md:ml-[40px]" />
-              <div className="w-[130px] h-[135px] md:w-[250px] md:h-[255px] sm:w-[170px] sm:h-[175px] bg-white rounded-lg mt-5 mb-2"></div>
-              <h1 className="heading md:ml-[10px]">{data.name}</h1>
+              <div className="w-[140px] h-[145px] md:w-[250px] md:h-[255px] sm:w-[170px] sm:h-[175px] bg-white rounded-lg mt-5 mb-2"></div>
+              <h1 className="font-manrope font-semibold text-white text-sm md:ml-[10px]">
+                {data.name}
+              </h1>
               <p className="font-manrope text-[#81AFDD] text-xs sm:text-sm md:text-base mt-2 mb-10 md:ml-[10px]">
                 {data.role}
               </p>

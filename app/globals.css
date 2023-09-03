@@ -101,7 +101,7 @@
   }
 
 .heading {
-    @apply font-manrope font-semibold text-xl text-white mt-2 sm:text-2xl 
+    @apply font-manrope font-semibold text-lg text-white mt-2 sm:text-2xl 
 }
 
 .text {
