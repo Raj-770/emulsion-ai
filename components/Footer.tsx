@@ -1,13 +1,24 @@
 import { footerLinks } from "@/constants";
 import Link from "next/link";
+import logo from "@/public/logo.png";
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer className="bg-[#031B34] mt-24">
       <div className="grid grid-cols-1 p-8">
         <div className="col-span-3">
-          <span className="font-manrope font-bold text-3xl gradient-text">
+          {/* <span className="font-manrope font-bold text-3xl gradient-text">
             Emulsion AI
-          </span>
+          </span> */}
+          <Image
+            src={logo}
+            alt=""
+            width={300}
+            height={32}
+            objectFit="contain"
+            className="ml-[-40px] mb-[-20px]"
+          />
           <p className="text-xs text-gray-700 mt-2">
             Emulsion AI 2023 <br />
             All rights reserved &copy;

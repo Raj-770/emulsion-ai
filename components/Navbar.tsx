@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import menu from "@/public/menu.svg";
 import close from "@/public/close.svg";
+import logo from "@/public/logo.png";
 
 const Navbar = () => {
   const navLinks = ["Our Mission", "About Us", "Contact Us"];
@@ -16,7 +17,15 @@ const Navbar = () => {
     <nav className="nav">
       {/* Logo */}
       <Link href={"/"}>
-        <h1 className="nav-title">Emulsion AI</h1>
+        {/* <h1 className="nav-title">Emulsion AI</h1> */}
+        <Image
+          src={logo}
+          alt=""
+          width={200}
+          height={32}
+          objectFit="contain"
+          className="nav-logo"
+        />
       </Link>
 
       {/* Links for large devices */}

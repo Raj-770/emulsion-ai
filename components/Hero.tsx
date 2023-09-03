@@ -1,6 +1,7 @@
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="blur-top-left ml-[-24px] mt-[-110px]" />
       <h1 className="hero-heading gradient-text">
         Empowering Businesses With Personalized AI
       </h1>
@@ -12,6 +13,7 @@ const Hero = () => {
       </p>
 
       <button className="hero-btn">Learn More</button>
+      <div className="blur-right mr-[-24px]" />
     </div>
   );
 };

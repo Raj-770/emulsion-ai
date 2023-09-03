@@ -17,6 +17,10 @@
     @apply font-manrope font-semibold text-white text-2xl
 }
 
+.nav-logo {
+    @apply my-[-10px] ml-[-20px]
+}
+
 .nav-menu-icon {
     @apply sm:hidden flex flex-1 justify-end items-center
 }
@@ -32,7 +36,7 @@
 /* Hero */
 
 .hero {
-    @apply grid grid-rows-3 mt-12 items-center gap-2
+    @apply grid grid-rows-3 mt-12 items-center gap-2 relative
 }
 
 .hero-heading{
@@ -93,4 +97,16 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+.blur-top-left {
+    @apply absolute bg-[#002853] rounded-br-full blur-3xl opacity-70 w-[200px] h-[250px] z-[-10] top-0
+}
+
+.blur-right {
+    @apply absolute bg-[#002853] rounded-l-full blur-3xl opacity-70 w-[100px] h-[300px] z-[-10] right-0 bottom-0
+}
+
+.blur-left{
+    @apply absolute bg-[#002853] rounded-r-full blur-3xl opacity-70 w-[150px] h-[300px] z-[-10] top-0
 }

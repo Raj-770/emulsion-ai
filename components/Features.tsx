@@ -2,7 +2,9 @@ import { featuresData } from "@/constants";
 
 const Features = () => {
   return (
-    <div className="grid grid-cols-2 items-start mt-24">
+    <div className="relative grid grid-cols-2 items-start mt-24">
+      <div className="blur-left ml-[-24px] mt-[-24px]" />
+
       <h1 className="col-span-2 gradient-text font-manrope font-semibold text-2xl mb-12 mt-10 tracking-tight">
         Empowering Your AI Journey
       </h1>
@@ -16,6 +18,7 @@ const Features = () => {
           <p className="features-text my-6">{data.desc}</p>
         </>
       ))}
+      <div className="blur-right mr-[-24px]" />
     </div>
   );
 };

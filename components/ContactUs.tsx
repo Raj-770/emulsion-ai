@@ -60,7 +60,11 @@ const ContactUs = () => {
   };
 
   return (
-    <div id="contact-us" className="grid grid-cols-1 items-start mt-24">
+    <div
+      id="contact-us"
+      className="relative grid grid-cols-1 items-start mt-24"
+    >
+      <div className="blur-left ml-[-24px] mt-[-24px]" />
       <h1 className=" gradient-text font-manrope font-semibold text-2xl mb-12 mt-10 tracking-tight">
         Contact Us
       </h1>
@@ -105,6 +109,7 @@ const ContactUs = () => {
           {loading ? "Sending..." : "Send"}
         </button>
       </form>
+      <div className="blur-right mr-[-24px]" />
     </div>
   );
 };

@@ -18,6 +18,7 @@ export default function RootLayout({
       <body className="bg-[#040C18]">
         <section className="mx-6 my-7">
           <Navbar />
+
           {children}
         </section>
         <Footer />

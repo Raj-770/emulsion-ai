@@ -2,8 +2,10 @@ import { missionData } from "@/constants";
 
 const OurMission = () => {
   return (
-    <div id="our-mission" className="bg-[#001B3D] mt-24">
-      <div className="gird gird-cols-1 py-10 pl-4 pr-12">
+    <div id="our-mission" className="bg-[#001B3D] mt-24 relative">
+      <div className="blur-left ml-[-24px] mt-[-24px]" />
+
+      <div className=" gird gird-cols-1 py-10 pl-4 pr-12">
         <div className="gradient-bar" />
         <h1 className="heading">Our Mission</h1>
         <p className="text">
@@ -25,6 +27,7 @@ const OurMission = () => {
           </>
         ))}
       </div>
+      <div className="blur-right mr-[-24px]" />
     </div>
   );
 };

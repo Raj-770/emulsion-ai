@@ -2,7 +2,8 @@ import { dreamTeam } from "@/constants";
 
 const AboutUs = () => {
   return (
-    <div id="about-us" className="bg-[#001B3D] mt-24">
+    <div id="about-us" className="relative bg-[#001B3D] mt-24">
+      <div className="blur-left ml-[-24px] mt-[-24px]" />
       <div className="gird gird-cols-1 py-10">
         <div className="pl-4 pr-12">
           <div className="gradient-bar" />
@@ -34,6 +35,7 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
+      <div className="blur-right mr-[-24px]" />
     </div>
   );
 };
