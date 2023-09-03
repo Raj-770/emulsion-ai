@@ -2,3 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/* Navbar */
+
+.nav {
+    @apply flex flex-row justify-between items-center
+}
+.nav-title {
+    @apply font-manrope font-semibold text-white text-2xl
+}
+
+.nav-menu-icon {
+    @apply sm:hidden flex flex-1 justify-end items-center
+}
+
+.nav-menu {
+    @apply  p-6 bg-[#001B3D] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl
+}
+
+.nav-menu-list {
+    @apply list-none text-white flex justify-end items-start flex-col gap-4
+}
+
+/* Hero */
+
+.hero {
+    @apply grid grid-rows-3 mt-12 items-center gap-2
+}
+
+.hero-heading{
+    @apply font-manrope font-bold text-3xl tracking-tight
+}
+
+.hero-text{
+    @apply font-manrope text-[#81AFDD] text-sm tracking-wider w-9/12
+}
+
+.hero-btn {
+    @apply bg-[#33CC99] text-white text-sm w-2/6 h-8 rounded-md mt-3
+}
+
+/* Features */
+
+.features-text {
+    @apply font-manrope font-light text-[#81AFDD] text-[12px] leading-[24px]
+}
+
+/* About Us */
+
+.au-gradient-bar {
+    @apply bg-gradient-to-r from-[#AE67FA] to-[#33CC99] h-1 w-24;
+}
+
+
+/* Contact Us */
+
+.form-label {
+    @apply grid grid-cols-1 my-5
+}
+
+.form-input {
+    @apply bg-[#031B34] text-white rounded-md p-2 mt-2 mb-5
+}
+
+/* Footer */
+
+
+/* Globals */
+
+.gradient-text {
+    @apply bg-gradient-to-r from-[#AE67FA] to-[#33CC99] text-transparent bg-clip-text;
+  }
+
+.gradient-bar {
+    @apply bg-gradient-to-r from-[#AE67FA] to-[#33CC99] h-1 w-9;
+  }
+
+.heading {
+    @apply font-manrope font-semibold text-xl text-white mt-2
+}
+
+.text {
+    @apply font-manrope text-[#81AFDD] text-xs mt-5 mb-8
+}
+
+html {
+    scroll-behavior: smooth;
+}

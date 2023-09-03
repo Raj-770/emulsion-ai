@@ -15,9 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
+      <body className="bg-[#040C18]">
+        <section className="mx-6 my-7">
+          <Navbar />
+          {children}
+        </section>
         <Footer />
       </body>
     </html>
