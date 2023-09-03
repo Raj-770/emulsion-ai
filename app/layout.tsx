@@ -15,6 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/icon.png"
+          type="image/png"
+          sizes="<generated>"
+        />
+      </head>
       <body className="bg-[#040C18]">
         <section className="mx-6 my-7 sm:mx-16 sm:my-10">
           <Navbar />
