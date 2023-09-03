@@ -71,7 +71,7 @@ const ContactUs = () => {
       <form ref={formRef} onSubmit={handelSubmit} className="md:ml-[-75px]">
         <label className="form-label">
           <div className="col-span-1">
-            <div className="gradient-bar" />
+            <div className="gradient-bar mb-2" />
             <span className="heading">Name</span>
           </div>
           <input
@@ -85,7 +85,7 @@ const ContactUs = () => {
         </label>
         <label className="form-label">
           <div className="col-span-1">
-            <div className="gradient-bar" />
+            <div className="gradient-bar mb-2" />
             <span className="heading">Email</span>
           </div>
           <input
@@ -99,7 +99,7 @@ const ContactUs = () => {
         </label>
         <label className="form-label">
           <div className="col-span-1">
-            <div className="gradient-bar" />
+            <div className="gradient-bar mb-2" />
             <span className="heading">Message</span>
           </div>
           <textarea
