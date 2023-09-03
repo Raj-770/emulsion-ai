@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#040C18]">
-        <section className="mx-6 my-7">
+        <section className="mx-6 my-7 sm:mx-16 sm:my-10">
           <Navbar />
 
           {children}

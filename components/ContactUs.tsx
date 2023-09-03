@@ -62,16 +62,18 @@ const ContactUs = () => {
   return (
     <div
       id="contact-us"
-      className="relative grid grid-cols-1 items-start mt-24"
+      className="relative grid md:grid-cols-2 items-start mt-24 "
     >
       <div className="blur-left ml-[-24px] mt-[-24px]" />
-      <h1 className=" gradient-text font-manrope font-semibold text-2xl mb-12 mt-10 tracking-tight">
+      <h1 className=" gradient-text features-heading sm:w-[250px]">
         Contact Us
       </h1>
-      <form ref={formRef} onSubmit={handelSubmit}>
+      <form ref={formRef} onSubmit={handelSubmit} className="md:ml-[-75px]">
         <label className="form-label">
-          <div className="gradient-bar" />
-          <span className="heading">Name</span>
+          <div className="col-span-1">
+            <div className="gradient-bar" />
+            <span className="heading">Name</span>
+          </div>
           <input
             type="text"
             name="name"
@@ -82,8 +84,10 @@ const ContactUs = () => {
           />
         </label>
         <label className="form-label">
-          <div className="gradient-bar" />
-          <span className="heading">Email</span>
+          <div className="col-span-1">
+            <div className="gradient-bar" />
+            <span className="heading">Email</span>
+          </div>
           <input
             type="email"
             name="email"
@@ -94,8 +98,10 @@ const ContactUs = () => {
           />
         </label>
         <label className="form-label">
-          <div className="gradient-bar" />
-          <span className="heading">Message</span>
+          <div className="col-span-1">
+            <div className="gradient-bar" />
+            <span className="heading">Message</span>
+          </div>
           <textarea
             name="message"
             rows={7}

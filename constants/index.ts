@@ -45,10 +45,6 @@ export const dreamTeam = [
     name: "Person 3",
     role: "Project Manager",
   },
-  {
-    name: "Person 4",
-    role: "Project Manager",
-  },
 ];
 
 export const footerLinks = [

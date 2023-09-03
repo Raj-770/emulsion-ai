@@ -2,22 +2,23 @@ import { featuresData } from "@/constants";
 
 const Features = () => {
   return (
-    <div className="relative grid grid-cols-2 items-start mt-24">
+    <div className="relative grid items-start mt-24 md:grid-cols-2 md:items-center md:gap-2">
       <div className="blur-left ml-[-24px] mt-[-24px]" />
 
-      <h1 className="col-span-2 gradient-text font-manrope font-semibold text-2xl mb-12 mt-10 tracking-tight">
+      <h1 className="gradient-text features-heading">
         Empowering Your AI Journey
       </h1>
-
-      {featuresData.map((data, index) => (
-        <>
-          <div className="col-span-1 my-7">
-            <div className="gradient-bar" />
-            <h1 className="heading">{data.title}</h1>
-          </div>
-          <p className="features-text my-6">{data.desc}</p>
-        </>
-      ))}
+      <div className="grid grid-cols-2 gap-5">
+        {featuresData.map((data, index) => (
+          <>
+            <div className="my-7">
+              <div className="gradient-bar" />
+              <h1 className="heading">{data.title}</h1>
+            </div>
+            <p className="features-text my-6">{data.desc}</p>
+          </>
+        ))}
+      </div>
       <div className="blur-right mr-[-24px]" />
     </div>
   );

@@ -9,7 +9,7 @@ import close from "@/public/close.svg";
 import logo from "@/public/logo.png";
 
 const Navbar = () => {
-  const navLinks = ["Our Mission", "About Us", "Contact Us"];
+  const navLinks = ["Our Mission", "About Us", "Contact Us", "Blog"];
 
   const [toggle, setToggle] = useState(false);
 
@@ -17,21 +17,24 @@ const Navbar = () => {
     <nav className="nav">
       {/* Logo */}
       <Link href={"/"}>
-        {/* <h1 className="nav-title">Emulsion AI</h1> */}
-        <Image
-          src={logo}
-          alt=""
-          width={200}
-          height={32}
-          objectFit="contain"
-          className="nav-logo"
-        />
+        <Image src={logo} alt="" objectFit="contain" className="nav-logo" />
       </Link>
 
       {/* Links for large devices */}
 
+      <div className="nav-links">
+        {navLinks.map((link) => (
+          <a
+            className="hover:underline"
+            href={`#${link.replace(" ", "-").toLowerCase()}`}
+          >
+            {link}
+          </a>
+        ))}
+      </div>
+
       {/* Menu for small devices */}
-      <div className="nav-menu-icon">
+      <div className="nav-menu-icon z-10">
         <Image
           src={toggle ? close : menu}
           alt="menu"
