@@ -30,10 +30,6 @@ export const featuresData = [
     title: "Cost Reduction",
     desc: "Experience substantial cost reductions in deployments and ML model usage while maintaining impeccable data compliance and performance. We're here to help you navigate the rapidly evolving landscape of Gen AI without drowning in tech debt.",
   },
-<<<<<<< HEAD
-=======
-},
->>>>>>> 5089f9785ddf0a42860892fb0c64b27334de9846
 ];
 
 export const dreamTeam = [
@@ -77,14 +73,10 @@ export const footerLinks = [
       { title: "Instagram", url: "/" },
       { title: "Twitter", url: "/" },
       { title: "Facebook", url: "/" },
-<<<<<<< HEAD
       {
         title: "LinkedIn",
         url: "https://www.linkedin.com/company/emulsion-ai/",
       },
-=======
-      { title: "LinkedIn", url: "https://www.linkedin.com/company/emulsion-ai/" }
->>>>>>> 5089f9785ddf0a42860892fb0c64b27334de9846
     ],
   },
 ];
