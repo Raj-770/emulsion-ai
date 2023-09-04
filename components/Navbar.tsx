@@ -9,7 +9,7 @@ import close from "@/public/close.svg";
 import logo from "@/public/logo.png";
 
 const Navbar = () => {
-  const navLinks = ["Our Mission", "About Us", "Contact Us", "Blog"];
+  const navLinks = ["Our Mission", "About Us", "Blog", "Contact Us"];
 
   const [toggle, setToggle] = useState(false);
 
