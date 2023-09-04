@@ -3,11 +3,12 @@
 import { useState, useRef, FormEventHandler, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 
-const ej_service = process.env.EMAILJS_SERVICE_API!;
-const ej_template = process.env.EMAILJS_TEMPLATE!;
-const ej_user = process.env.EMAILJS_USER!;
+const ej_service = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_API!;
+const ej_template = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE!;
+const ej_user = process.env.NEXT_PUBLIC_EMAILJS_USER!;
 
 const ContactUs = () => {
+  console.log(ej_service, ej_template, ej_user);
   const formRef = useRef(null);
   const [form, setFrom] = useState({
     name: "",
