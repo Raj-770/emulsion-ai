@@ -85,11 +85,11 @@
 }
 
 .au-pic-container {
-  @apply flex flex-col items-center justify-center md:justify-normal md:items-start col-span-1
+  @apply flex flex-col items-center justify-center md:justify-normal md:items-start col-span-1 flex-wrap
 }
 
 .au-pic {
-  @apply w-[140px] h-[145px] md:w-[250px] md:h-[255px] sm:w-[170px] sm:h-[175px] bg-white rounded-lg mt-5 mb-2
+  @apply w-[140px] h-[145px] md:w-[250px] md:h-[255px] sm:w-[170px] sm:h-[175px] bg-white rounded-lg mt-5 mb-2 opacity-10
 }
 
 /* Contact Us */

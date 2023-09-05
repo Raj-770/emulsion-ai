@@ -1,39 +1,61 @@
 import { dreamTeam } from "@/constants";
+import Image from "next/image";
+
+import twitter from "@/public/twitter.svg";
+import linkedin from "@/public/linkedin.svg";
 
 const AboutUs = () => {
   return (
     <div id="about-us" className="relative bg-[#001B3D] mt-24">
-      <div className="blur-left ml-[-24px] mt-[-24px]" />
-      <div className="gird gird-cols-1 py-10 md:py-16 md:pl-14">
-        <div className="pl-4 pr-12">
-          <div className="sm:grid sm:grid-cols-3 items-center">
-            <div className="col-span-1">
-              <div className="gradient-bar" />
-              <h1 className="heading">About Us</h1>
-            </div>
-            <p className="text col-span-2">
-              We have spent years scaling start-ups, building out digital
-              experiences and working at big tech – including Google, Amazon,
-              Fitbit, D2L, Typeform, Lazer, and Redbull.We have spent years
-              scaling start-ups, building out digital experiences and working at
-              big tech – including Google, Amazon, Fitbit, D2L, Typeform, Lazer,
-              and Redbull.
-            </p>
-          </div>
-          <h1 className="gradient-text om-heading">The Dream Team</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-3 p-5 sm:p-7 md:p-12">
+        <div className="col-span-1 flex flex-col">
+          <div className="gradient-bar" />
+          <div className="heading">About Us</div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3">
+        <p className="sm:col-span-2 font-manrope text-[#81AFDD] text-xs sm:text-sm my-5 sm:my-0 md:text-base">
+          We have spent years scaling start-ups, building out digital
+          experiences and working at big tech – including Google, Amazon,
+          Fitbit, D2L, Typeform, Lazer, and Redbull.We have spent years scaling
+          start-ups, building out digital experiences and working at big tech –
+          including Google, Amazon, Fitbit, D2L, Typeform, Lazer, and Redbull.
+        </p>
+        <h1 className="sm:col-span-3 gradient-text font-manrope font-semibold tracking-tight text-2xl md:text-[50px] md:leading-[55px] sm:text-4xl my-10 sm:my-16">
+          Meet The Leaders
+        </h1>
+        <div className="sm:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
           {dreamTeam.map((data, index) => (
-            <div key={index} className="au-pic-container">
-              <div className="au-gradient-bar md:ml-[40px]" />
-              <div className="au-pic"></div>
-              <h1 className="au-name">{data.name}</h1>
-              <p className="au-role">{data.role}</p>
+            <div className="col-span-1 flex flex-col justify-center items-center bg-[#81AFDD] bg-opacity-10 h-96 rounded-3xl">
+              <div className="w-52 h-52 bg-[#81AFDD] opacity-60 rounded-full" />
+              <h2 className="font-manrope font-semibold text-white text-lg mt-4">
+                {data.name}
+              </h2>
+              <h4 className="font-monrope text-[#81AFDD] text-sm">
+                {data.role}
+              </h4>
+              <div className="flex flex-row justify-center items-center gap-5 mt-5">
+                <a href="/">
+                  <Image
+                    src={twitter}
+                    alt=""
+                    width={20}
+                    height={20}
+                    objectFit="contain"
+                  />
+                </a>
+                <a href="/">
+                  <Image
+                    src={linkedin}
+                    alt=""
+                    width={20}
+                    height={20}
+                    objectFit="contain"
+                  />
+                </a>
+              </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="blur-right mr-[-24px]" />
     </div>
   );
 };
