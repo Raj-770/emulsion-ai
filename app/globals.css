@@ -21,7 +21,7 @@
 }
 
 .nav-menu-icon {
-  @apply md:hidden flex flex-1 justify-end items-center;
+  @apply md:hidden flex flex-1 justify-end items-center z-10;
 }
 
 .nav-menu {
@@ -53,10 +53,14 @@
 /* Our Mission */
 
 .om-heading {
-  @apply font-manrope font-semibold text-2xl md:text-[50px] md:leading-[55px] sm:text-4xl mb-12 mt-10 sm:mb-20 tracking-tight md:w-[700px];
+  @apply font-manrope font-semibold tracking-tight text-2xl md:text-[50px] md:leading-[55px] sm:text-4xl mb-12 mt-10 sm:mb-20  md:w-[700px];
 }
 
 /* Features */
+
+.features {
+  @apply relative grid items-start mt-24 md:grid-cols-2 md:items-center md:gap-2
+}
 
 .features-heading {
   @apply font-manrope font-semibold text-2xl mb-12 mt-10 tracking-tight sm:text-3xl md:text-5xl;
@@ -72,6 +76,22 @@
   @apply bg-gradient-to-r from-[#AE67FA] to-[#33CC99] h-1 w-24 md:w-40;
 }
 
+.au-name {
+  @apply font-manrope font-semibold text-white text-sm sm:text-base md:text-lg md:ml-[10px]
+}
+
+.au-role {
+  @apply font-manrope text-[#81AFDD] text-xs sm:text-sm md:text-base mt-2 mb-10 md:ml-[10px]
+}
+
+.au-pic-container {
+  @apply flex flex-col items-center justify-center md:justify-normal md:items-start col-span-1
+}
+
+.au-pic {
+  @apply font-manrope text-[#81AFDD] text-xs sm:text-sm md:text-base mt-2 mb-10 md:ml-[10px]
+}
+
 /* Contact Us */
 
 .form-label {
@@ -82,7 +102,24 @@
   @apply bg-[#031B34] text-white rounded-md p-2 mt-2 mb-5 md:col-span-2;
 }
 
+.dialog-box {
+  @apply inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2
+}
+
 /* Footer */
+
+.footer {
+  @apply grid grid-cols-1 sm:grid-cols-2 p-8 sm:p-10 md:p-20
+}
+
+.footer-logo {
+  @apply ml-[-40px] sm:ml-[-55px] md:ml-[-80px]  mb-[-20px] w-[300px] sm:w-[450px] md:w-[600px]
+}
+
+.footer-bottom-text {
+  @apply font-manrope font-light text-[10px] sm:text-xs md:text-base text-gray-500 text-center py-3 sm:py-8 md:py-12
+}
+
 
 /* Globals */
 

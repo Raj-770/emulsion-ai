@@ -5,7 +5,7 @@ const OurMission = () => {
     <div id="our-mission" className="bg-[#001B3D] mt-28 relative">
       <div className="blur-left ml-[-24px] mt-[-24px]" />
 
-      <div className=" grid grid-cols-1 py-10 pl-4 sm:py-16 sm:pl-14 pr-12">
+      <div className="grid grid-cols-1 py-10 pl-4 sm:py-16 sm:pl-14 pr-12">
         <div className="sm:grid sm:grid-cols-3">
           <div className="col-span-1">
             <div className="gradient-bar" />

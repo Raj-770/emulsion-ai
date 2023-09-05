@@ -6,13 +6,13 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-[#031B34] mt-24">
-      <div className="grid grid-cols-1 sm:grid-cols-2 p-8 sm:p-10 md:p-20">
+      <div className="footer">
         <div className="col-span-1">
           <Image
             src={logo}
             alt=""
             objectFit="contain"
-            className="ml-[-40px] sm:ml-[-55px] md:ml-[-80px]  mb-[-20px] w-[300px] sm:w-[450px] md:w-[600px]"
+            className="footer-logo"
           />
           <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-2">
             Emulsion AI 2023 <br />
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full bg-gray-500 h-[0.5px]" />
-      <p className="font-manrope font-light text-[10px] sm:text-xs md:text-base text-gray-500 text-center py-3 sm:py-8 md:py-12">
+      <p className="footer-bottom-text">
         @2023 Emulsion AI. &nbsp; All Rigths Reserverd.
       </p>
     </footer>

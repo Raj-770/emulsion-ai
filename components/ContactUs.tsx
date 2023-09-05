@@ -12,7 +12,6 @@ const ej_user = process.env.NEXT_PUBLIC_EMAILJS_USER!;
 const ContactUs = () => {
   let [isOpen, setIsOpen] = useState(false);
 
-  console.log(ej_service, ej_template, ej_user);
   const formRef = useRef(null);
   const [form, setFrom] = useState({
     name: "",
@@ -169,7 +168,7 @@ const ContactUs = () => {
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="dialog-box"
                       onClick={() => setIsOpen(false)}
                     >
                       Got it, thanks!

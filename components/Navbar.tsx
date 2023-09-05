@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       {/* Menu for small devices */}
-      <div className="nav-menu-icon z-10">
+      <div className="nav-menu-icon">
         <Image
           src={toggle ? close : menu}
           alt="menu"
@@ -51,7 +51,7 @@ const Navbar = () => {
               return (
                 <li
                   key={`#${link.replace(" ", "-").toLowerCase()}`}
-                  className={` font-manrope font-medium cursor-pointer text-s`}
+                  className={`font-manrope font-medium cursor-pointer text-s`}
                   onClick={() => {
                     setToggle(!toggle);
                   }}

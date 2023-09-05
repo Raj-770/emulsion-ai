@@ -24,18 +24,11 @@ const AboutUs = () => {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3">
           {dreamTeam.map((data, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center md:justify-normal md:items-start col-span-1"
-            >
+            <div key={index} className="au-pic-container">
               <div className="au-gradient-bar md:ml-[40px]" />
-              <div className="w-[140px] h-[145px] md:w-[250px] md:h-[255px] sm:w-[170px] sm:h-[175px] bg-white rounded-lg mt-5 mb-2"></div>
-              <h1 className="font-manrope font-semibold text-white text-sm sm:text-base md:text-lg md:ml-[10px]">
-                {data.name}
-              </h1>
-              <p className="font-manrope text-[#81AFDD] text-xs sm:text-sm md:text-base mt-2 mb-10 md:ml-[10px]">
-                {data.role}
-              </p>
+              <div className="au-pic"></div>
+              <h1 className="au-name">{data.name}</h1>
+              <p className="au-role">{data.role}</p>
             </div>
           ))}
         </div>
